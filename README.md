@@ -1,5 +1,7 @@
 # NovaGen - Health Risk Prediction using Ensemble Models
 
+---
+
 ## 📌 Project Overview
 Build an end-to-end **Supervised Machine Learning Pipeline** for predicting *health risk* using demographic, lifestyle, and clinical features. The project implements **Logistic Regression** as a *baseline model* alongside **Random Forest** and **Gradient Boosting** *Ensemble Classifiers*. **Binary classification** is performed with comprehensive **EDA, Data Preprocessing,** and **Model Evaluation** using **Recall, Accuracy,** and **ROC-AUC**. Special emphasis is placed on **recall** due to the health-critical nature of the problem, ensuring high-risk individuals are not missed.
 
