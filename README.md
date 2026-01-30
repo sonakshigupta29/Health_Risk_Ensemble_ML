@@ -1,17 +1,12 @@
 # NovaGen - Health Risk Prediction using Ensemble Models
 
 ## 📌 Project Overview
-An end-to-end **Supervised Machine Learning Pipeline** to predict *health risk* using demographic, lifestyle, and clinical features using **Logistic Regression (Baseline model), Random Forest & Gradient Boosting** ensemble models.
-Implemented Binary Classification along with **EDA, Data Preprocessing & Model Evaluation(Recall, Accuracy, ROC-AUC Score)**.
-The primary goal of this project is to explore and compare **ensemble learning models** and select the most reliable classifier based on appropriate evaluation metrics, with special emphasis on recall due to the health-critical nature of the problem.
-
----
+Build an end-to-end **Supervised Machine Learning Pipeline** for predicting *health risk* using demographic, lifestyle, and clinical features. The project implements **Logistic Regression** as a *baseline model* alongside **Random Forest** and **Gradient Boosting** *Ensemble Classifiers*. **Binary classification** is performed with comprehensive **EDA, Data Preprocessing,** and **Model Evaluation** using **Recall, Accuracy,** and **ROC-AUC**. Special emphasis is placed on **recall** due to the health-critical nature of the problem, ensuring high-risk individuals are not missed.
 
 ## 🩺 Problem Statement
 Early identification of unhealthy or high-risk individuals is crucial in healthcare applications.  
 Missing a high-risk patient can lead to severe consequences; therefore, the model prioritizes **Recall** while maintaining strong overall performance.
 
----
 
 ## 📊 Dataset Description
 The dataset contains health-related attributes including:
@@ -26,7 +21,6 @@ The dataset contains health-related attributes including:
 
 The dataset does **not contain missing values**, so only minimal preprocessing was required.
 
----
 
 ## 🔍 Exploratory Data Analysis (EDA)
 EDA was performed to understand the dataset and uncover patterns:
@@ -37,9 +31,8 @@ EDA was performed to understand the dataset and uncover patterns:
 - Correlation heatmap for numerical attributes
 - Multicollinearity and Skewness Check
 
-EDA insights helped guide model selection and evaluation strategy.
+*EDA insights helped guide model selection and evaluation strategy.*
 
----
 
 ## ⚙️ Data Preprocessing
 - Encoding of categorical variables
@@ -47,7 +40,6 @@ EDA insights helped guide model selection and evaluation strategy.
 - Stratified Train-Test Split to preserve class distribution
 - No heavy preprocessing or feature engineering was applied, as the focus of the project was on ensemble model comparison
 
----
 
 ## 🤖 Models Implemented
 The following models were trained and evaluated:
@@ -66,7 +58,6 @@ The following models were trained and evaluated:
 4. **Gradient Boosting Classifier**
    - Evaluated as an alternative ensemble approach.
 
----
 
 ## 📈 Evaluation Metrics
 The models were evaluated using the following metrics:
@@ -76,9 +67,8 @@ The models were evaluated using the following metrics:
 - F1-score  
 - Confusion Matrix  
 - ROC-AUC (for the final selected model)
-Recall was prioritized because minimizing false negatives is critical in health risk prediction.
+*Recall* was prioritized because minimizing false negatives is critical in health risk prediction.
 
----
 
 ## 🏆 Results Summary
 
@@ -89,12 +79,10 @@ Recall was prioritized because minimizing false negatives is critical in health 
 | Tuned Random Forest            |   93.45      |   95.68     |
 | Gradient Boosting              |   93.03      |   94.97     |
 
----
 
 ## 📉 ROC-AUC Analysis
 The final Random Forest model achieved a **ROC-AUC score of 0.984**, indicating excellent class separability and robust performance across different classification thresholds.
 
----
 
 ## ✅ Final Model Selection
 **Random Forest** was selected as the final model due to:
@@ -103,12 +91,10 @@ The final Random Forest model achieved a **ROC-AUC score of 0.984**, indicating 
 - Excellent ROC-AUC score
 - Robust generalization performance
 
----
 
 ## 🧠 Conclusion
 This project demonstrates that ensemble-based models, particularly Random Forest, are highly effective for health risk prediction tasks. By prioritizing recall and validating performance using multiple evaluation metrics, the final model offers a reliable solution for identifying unhealthy individuals in a healthcare-oriented dataset.
 
----
 
 ## 🛠️ Technologies Used
 - Python  
@@ -116,7 +102,6 @@ This project demonstrates that ensemble-based models, particularly Random Forest
 - Matplotlib, Seaborn  
 - Scikit-learn
 
----
 
 ## 🔮 Future Improvements
 - Apply advanced feature engineering techniques
@@ -126,7 +111,6 @@ This project demonstrates that ensemble-based models, particularly Random Forest
 - Investigate resampling techniques (e.g., SMOTE) for imbalance handling
 - Extend the solution to a real-time or deployment-ready system
 
----
 
 ## ▶️ How to Run
 1. Clone the repository:
